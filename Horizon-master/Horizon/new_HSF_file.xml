@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<MODEL>
+  <PYTHON enableScripting="true" />
+  <ASSET assetName="Asset1">
+    <DynamicState ICs="[7378.137; 0.0; 0.0; 0.0; 6.02088; 4.215866]" DynamicStateType="PREDETERMINED_ECI">
+      <EOMS EOMSType="orbital_EOMS" />
+    </DynamicState>
+    <SUBSYSTEM subsystemName="Access" Type="Access" />
+    <SUBSYSTEM subsystemName="Adcs" Type="Adcs" slewRate="5">
+      <IC value="[0.0; 0.0; 0.0]" key="ECI_Pointing_Vector(XYZ)" type="Matrix" />
+      <DEPENDENCY subsystemName="Access" />
+    </SUBSYSTEM>
+    <SUBSYSTEM subsystemName="EOSensor" Type="EOSensor" highQualityCaptureTime="7" midQualityCaptureTime="5" lowQualityCaptureTime="3" highQualityNumPixels="15000" midQualityNumPixels="10000" lowQualityNumPixels="5000">
+      <IC value="0.0" key="numPixels" type="Double" />
+      <IC value="0.0" key="IncidenceAngle" type="Double" />
+      <IC value="0.0" key="EOSensorOn" type="Bool" />
+      <DEPENDENCY subsystemName="Adcs" />
+    </SUBSYSTEM>
+    <SUBSYSTEM subsystemName="SSDR" Type="Ssdr" bufferSize="5000">
+      <IC value="0.0" key="DataBufferFillRatio" type="Double" />
+      <DEPENDENCY subsystemName="EOSensor" fcnName="SSDRfromEOSensor.asset1" />
+    </SUBSYSTEM>
+    <SUBSYSTEM subsystemName="Comm" Type="Comm">
+      <IC value="0.0" key="DataRate(MB/s)" type="Double" />
+      <DEPENDENCY subsystemName="SSDR" fcnName="CommfromSSDR.asset1" />
+    </SUBSYSTEM>
+    <SUBSYSTEM subsystemName="Power" Type="Power" penumbraSolarPower="75" fullSolarPower="150" batterySize="1000000">
+      <IC value="0.0" key="DepthofDischarge" type="Double" />
+      <IC value="0.0" key="SolarPanelPowerIn" type="Double" />
+      <DEPENDENCY subsystemName="Comm" fcnName="PowerfromComm.asset1" />
+      <DEPENDENCY subsystemName="Adcs" fcnName="PowerfromADCS.asset1" />
+      <DEPENDENCY subsystemName="EOSensor" fcnName="PowerfromEOSensor.asset1" />
+      <DEPENDENCY subsystemName="SSDR" fcnName="PowerfromSSDR.asset1" />
+    </SUBSYSTEM>
+    <CONSTRAINT subsystemName="Power" value="0.25" type="FAIL_IF_HIGHER" name="con1">
+      <STATEVAR key="DepthofDischarge" type="Double" />
+    </CONSTRAINT>
+    <CONSTRAINT subsystemName="SSDR" value="0.7" type="FAIL_IF_HIGHER" name="con2">
+      <STATEVAR key="DataBufferFillRatio" type="Double" />
+    </CONSTRAINT>
+  </ASSET>
+  <ASSET assetName="Asset2">
+    <DynamicState ICs="[-7378.137; 0.0; 0.0; 0.0; -6.02088; 4.215866]" DynamicStateType="PREDETERMINED_ECI">
+      <EOMS EOMSType="orbital_EOMS" />
+    </DynamicState>
+    <SUBSYSTEM subsystemName="Access" Type="Access" />
+    <SUBSYSTEM subsystemName="Adcs" Type="Adcs" slewRate="5">
+      <IC value="[0.0; 0.0; 0.0]" key="ECI_Pointing_Vector(XYZ)" type="Matrix" />
+      <DEPENDENCY subsystemName="Access" />
+    </SUBSYSTEM>
+    <SUBSYSTEM subsystemName="EOSensor" Type="EOSensor" highQualityCaptureTime="7" midQualityCaptureTime="5" lowQualityCaptureTime="3" highQualityNumPixels="15000" midQualityNumPixels="10000" lowQualityNumPixels="5000">
+      <IC value="0.0" key="numPixels" type="Double" />
+      <IC value="0.0" key="IncidenceAngle" type="Double" />
+      <IC value="0.0" key="EOSensorOn" type="Bool" />
+      <DEPENDENCY subsystemName="Adcs" />
+    </SUBSYSTEM>
+    <SUBSYSTEM subsystemName="SSDR" Type="Ssdr" bufferSize="5000">
+      <IC value="0.0" key="DataBufferFillRatio" type="Double" />
+      <DEPENDENCY subsystemName="EOSensor" fcnName="SSDRfromEOSensor.asset2" />
+    </SUBSYSTEM>
+    <SUBSYSTEM subsystemName="Comm" Type="Comm">
+      <IC value="0.0" key="DataRate(MB/s)" type="Double" />
+      <DEPENDENCY subsystemName="SSDR" fcnName="CommfromSSDR.asset2" />
+    </SUBSYSTEM>
+    <SUBSYSTEM subsystemName="Power" Type="Power" penumbraSolarPower="75" fullSolarPower="150" batterySize="1000000">
+      <IC value="0.0" key="DepthofDischarge" type="Double" />
+      <IC value="0.0" key="SolarPanelPowerIn" type="Double" />
+      <DEPENDENCY subsystemName="Comm" fcnName="PowerfromComm.asset2" />
+      <DEPENDENCY subsystemName="Adcs" fcnName="PowerfromADCS.asset2" />
+      <DEPENDENCY subsystemName="EOSensor" fcnName="PowerfromEOSensor.asset2" />
+      <DEPENDENCY subsystemName="SSDR" fcnName="PowerfromSSDR.asset2" />
+    </SUBSYSTEM>
+    <CONSTRAINT subsystemName="Power" value="0.25" type="FAIL_IF_HIGHER" name="con1">
+      <STATEVAR key="DepthofDischarge" type="Double" />
+    </CONSTRAINT>
+    <CONSTRAINT subsystemName="SSDR" value="0.7" type="FAIL_IF_HIGHER" name="con2">
+      <STATEVAR key="DataBufferFillRatio" type="Double" />
+    </CONSTRAINT>
+  </ASSET>
+  <REQUIREMENT value="20.0" type="LESS_THAN" name="imgcapqty" />
+</MODEL>

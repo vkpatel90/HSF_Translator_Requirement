@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ConstraintBlocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/ConstraintBlocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/ConstraintBlocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_wtyu0PsfEeeyDfxL4E7yBg" name="HSF_Aeolus_Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_xc0YAPsfEeeyDfxL4E7yBg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_xd3g4PsfEeeyDfxL4E7yBg">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_flJEcPsiEeeyDfxL4E7yBg" name="AEOLUS">
+      <packagedElement xmi:type="uml:Class" xmi:id="_y8hWkPsnEeeyDfxL4E7yBg" name="MODEL">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_MmqqcPsxEeeyDfxL4E7yBg" name="PYTHON">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_v0G9sPszEeeyDfxL4E7yBg" name="enableScripting" visibility="public">
+            <type xmi:type="uml:DataType" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Boolean"/>
+            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_60Bn4PszEeeyDfxL4E7yBg" value="true"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_VhyLUPsxEeeyDfxL4E7yBg" name="ASSET">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q3OVIPs7EeeyDfxL4E7yBg" name="assetName" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Z69mgPs7EeeyDfxL4E7yBg" name="assetName" value="Asset1"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_jdSpoPtBEeeyDfxL4E7yBg" name="DynamicState">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_2RdTQPtBEeeyDfxL4E7yBg" name="ICs" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_HxxvYPtCEeeyDfxL4E7yBg" name="ICs" value="[7378.137; 0.0; 0.0; 0.0; 6.02088; 4.215866]"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_3_LZUPtBEeeyDfxL4E7yBg" name="DynamicStateType" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_REnMsPtCEeeyDfxL4E7yBg" name="DynamicStateType" value="PREDETERMINED_ECI"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_M-Oz4PtHEeeyDfxL4E7yBg" name="EOMS">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_QBfwkPtHEeeyDfxL4E7yBg" name="EOMSType" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_VjI0MPtHEeeyDfxL4E7yBg" name="EOMSType" value="orbital_EOMS"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_wIxdwPtBEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_XbnyEPtCEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_icHEAPtCEeeyDfxL4E7yBg" name="subsystemName" value="Access"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_YiX-wPtCEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_oJs48PtCEeeyDfxL4E7yBg" name="Type" value="Access"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_t00BoPtCEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_t00BoftCEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_t00BovtCEeeyDfxL4E7yBg" name="subsystemName" value="Adcs"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_t00Bo_tCEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_t00BpPtCEeeyDfxL4E7yBg" name="Type" value="Adcs"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_G6IgQPtDEeeyDfxL4E7yBg" name="slewRate" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_MU11cPtDEeeyDfxL4E7yBg" name="slewRate" value="5"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_deKKAPtHEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_kUQfIPtHEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_11rHcPtHEeeyDfxL4E7yBg" name="value" value="[0.0; 0.0; 0.0]"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_lYN2gPtHEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="__aaNEPtHEeeyDfxL4E7yBg" name="key" value="ECI_Pointing_Vector(XYZ)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_myrpYPtHEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_ET6SoPtIEeeyDfxL4E7yBg" name="type" value="Matrix"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_fTn20PtHEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_pmlUYPtHEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_LRrWAPtIEeeyDfxL4E7yBg" name="subsystemName" value="Access"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_uXkJYPtCEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_uXkJYftCEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_uXkJYvtCEeeyDfxL4E7yBg" name="subsystemName" value="EOSensor"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_uXkJY_tCEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_uXkJZPtCEeeyDfxL4E7yBg" name="Type" value="EOSensor"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_XveFsPtDEeeyDfxL4E7yBg" name="highQualityCaptureTime" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_f3c5cPtDEeeyDfxL4E7yBg" name="highQualityCaptureTime" value="7"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_yip0UPtDEeeyDfxL4E7yBg" name="midQualityCaptureTime" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_yip0UftDEeeyDfxL4E7yBg" name="midQualityCaptureTime" value="5"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_2RtgAPtDEeeyDfxL4E7yBg" name="lowQualityCaptureTime" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_2RtgAftDEeeyDfxL4E7yBg" name="lowQualityCaptureTime" value="3"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_2e5AYPtDEeeyDfxL4E7yBg" name="highQualityNumPixels" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_2e5AYftDEeeyDfxL4E7yBg" name="highQualityNumPixels" value="15000"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_2icDoPtDEeeyDfxL4E7yBg" name="midQualityNumPixels" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_2icDoftDEeeyDfxL4E7yBg" name="midQualityNumPixels" value="10000"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_2lZRAPtDEeeyDfxL4E7yBg" name="lowQualityNumPixels" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_2lZRAftDEeeyDfxL4E7yBg" name="lowQualityNumPixels" value="5000"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_QMOkcPtIEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_QMOkcftIEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_QMOkcvtIEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_QMOkc_tIEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_QMOkdPtIEeeyDfxL4E7yBg" name="key" value="numPixels"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_QMOkdftIEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_QMOkdvtIEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hV9FgPtIEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hV9FgftIEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hV9FgvtIEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hV9Fg_tIEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hV9FhPtIEeeyDfxL4E7yBg" name="key" value="IncidenceAngle"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hV9FhftIEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hV9FhvtIEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hesKwPtIEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hesKwftIEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hesKwvtIEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hesKw_tIEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hesKxPtIEeeyDfxL4E7yBg" name="key" value="EOSensorOn"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hesKxftIEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hesKxvtIEeeyDfxL4E7yBg" name="type" value="Bool"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_tLRtsPtIEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_tLRtsftIEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_tLRtsvtIEeeyDfxL4E7yBg" name="subsystemName" value="Adcs"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_vXtXwPtCEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_vXtXwftCEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_vXtXwvtCEeeyDfxL4E7yBg" name="subsystemName" value="SSDR"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_vXtXw_tCEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_vXtXxPtCEeeyDfxL4E7yBg" name="Type" value="Ssdr"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_uasrAPtEEeeyDfxL4E7yBg" name="bufferSize" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_y7c5YPtEEeeyDfxL4E7yBg" name="bufferSize" value="5000"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zmvVQPtIEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zmvVQftIEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_zmvVQvtIEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zmvVQ_tIEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_zmvVRPtIEeeyDfxL4E7yBg" name="key" value="DataBufferFillRatio"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zmvVRftIEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_zmvVRvtIEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zmv8UPtIEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zmv8UftIEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_zmv8UvtIEeeyDfxL4E7yBg" name="subsystemName" value="EOSensor"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-RdLgPtIEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_F1bTQPtJEeeyDfxL4E7yBg" name="fcnName" value="SSDRfromEOSensor.asset1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ve16gPtCEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_ve16gftCEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_ve16gvtCEeeyDfxL4E7yBg" name="subsystemName" value="Comm"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_ve16g_tCEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_ve16hPtCEeeyDfxL4E7yBg" name="Type" value="Comm"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_N1EqYPtJEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_N1EqYftJEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_N1EqYvtJEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_N1EqY_tJEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_N1EqZPtJEeeyDfxL4E7yBg" name="key" value="DataRate(MB/s)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_N1EqZftJEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_N1EqZvtJEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_N1F4gPtJEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_N1F4gftJEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_N1F4gvtJEeeyDfxL4E7yBg" name="subsystemName" value="SSDR"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_N1F4g_tJEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_N1F4hPtJEeeyDfxL4E7yBg" name="fcnName" value="CommfromSSDR.asset1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_vlriUPtCEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_vlriUftCEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_vlriUvtCEeeyDfxL4E7yBg" name="subsystemName" value="Power"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_vlriU_tCEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_vlriVPtCEeeyDfxL4E7yBg" name="Type" value="Power"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_OUixcPtFEeeyDfxL4E7yBg" name="penumbraSolarPower" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_OUixcftFEeeyDfxL4E7yBg" name="penumbraSolarPower" value="75"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_OUiKYPtFEeeyDfxL4E7yBg" name="fullSolarPower" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_OUiKYftFEeeyDfxL4E7yBg" name="fullSolarPower" value="150"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_OUg8QPtFEeeyDfxL4E7yBg" name="batterySize" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_OUg8QftFEeeyDfxL4E7yBg" name="batterySize" value="1000000"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hbt50PtJEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hbt50ftJEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hbt50vtJEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hbt50_tJEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hbt51PtJEeeyDfxL4E7yBg" name="key" value="DepthofDischarge"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hbt51ftJEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hbt51vtJEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hjiZEPtJEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hjiZEftJEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hjiZEvtJEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hjiZE_tJEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hjiZFPtJEeeyDfxL4E7yBg" name="key" value="SolarPanelPowerIn"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hjiZFftJEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hjiZFvtJEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_2XhlYPtJEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_2XhlYftJEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2XhlYvtJEeeyDfxL4E7yBg" name="subsystemName" value="Comm"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_2XhlY_tJEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2XhlZPtJEeeyDfxL4E7yBg" name="fcnName" value="PowerfromComm.asset1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_2dN9sPtJEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_2dN9sftJEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2dN9svtJEeeyDfxL4E7yBg" name="subsystemName" value="Adcs"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_2dN9s_tJEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2dN9tPtJEeeyDfxL4E7yBg" name="fcnName" value="PowerfromADCS.asset1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_2iTSAPtJEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_2iTSAftJEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2iTSAvtJEeeyDfxL4E7yBg" name="subsystemName" value="EOSensor"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_2iTSA_tJEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2iTSBPtJEeeyDfxL4E7yBg" name="fcnName" value="PowerfromEOSensor.asset1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_2o63YPtJEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_2o63YftJEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2o63YvtJEeeyDfxL4E7yBg" name="subsystemName" value="SSDR"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_2o63Y_tJEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2o63ZPtJEeeyDfxL4E7yBg" name="fcnName" value="PowerfromSSDR.asset1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_5yU1IPtFEeeyDfxL4E7yBg" name="CONSTRAINT">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_-KgWUPtFEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_GzEuoPtGEeeyDfxL4E7yBg" name="subsystemName" value="Power"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_AygTUPtGEeeyDfxL4E7yBg" name="value" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_NEC9cPtGEeeyDfxL4E7yBg" name="value" value="0.25"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_A44BEPtGEeeyDfxL4E7yBg" name="type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_VC8tsPtGEeeyDfxL4E7yBg" name="type" value="FAIL_IF_HIGHER"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_BE5D0PtGEeeyDfxL4E7yBg" name="name" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_aUhVAPtGEeeyDfxL4E7yBg" name="name" value="con1"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_xjIXYPtLEeeyDfxL4E7yBg" name="STATEVAR">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_2WxFgPtLEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-3KZQPtLEeeyDfxL4E7yBg" name="key" value="DepthofDischarge"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_35p0kPtLEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_D39ZoPtMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_bp2wQPtGEeeyDfxL4E7yBg" name="CONSTRAINT">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_bp2wQftGEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_bp3XUPtGEeeyDfxL4E7yBg" name="subsystemName" value="SSDR"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_bp3XUftGEeeyDfxL4E7yBg" name="value" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_bp3XUvtGEeeyDfxL4E7yBg" name="value" value="0.7"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_bp3XU_tGEeeyDfxL4E7yBg" name="type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_bp3XVPtGEeeyDfxL4E7yBg" name="type" value="FAIL_IF_HIGHER"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_bp3XVftGEeeyDfxL4E7yBg" name="name" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_bp3XVvtGEeeyDfxL4E7yBg" name="name" value="con2"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_SDRBwPtMEeeyDfxL4E7yBg" name="STATEVAR">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_SDRBwftMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_SDRBwvtMEeeyDfxL4E7yBg" name="key" value="DataBufferFillRatio"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_SDRBw_tMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_SDRBxPtMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_dXkb0PsxEeeyDfxL4E7yBg" name="ASSET">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_W7jZoPs8EeeyDfxL4E7yBg" name="assetName" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_c58qsPs8EeeyDfxL4E7yBg" name="assetName" value="Asset2"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hBKkcPtMEeeyDfxL4E7yBg" name="DynamicState">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBKkcftMEeeyDfxL4E7yBg" name="ICs" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBKkcvtMEeeyDfxL4E7yBg" name="ICs" value="[-7378.137; 0.0; 0.0; 0.0; -6.02088; 4.215866]"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBKkc_tMEeeyDfxL4E7yBg" name="DynamicStateType" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBKkdPtMEeeyDfxL4E7yBg" name="DynamicStateType" value="PREDETERMINED_ECI"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBKkdftMEeeyDfxL4E7yBg" name="EOMS">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBKkdvtMEeeyDfxL4E7yBg" name="EOMSType" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBKkd_tMEeeyDfxL4E7yBg" name="EOMSType" value="orbital_EOMS"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hBLykPtMEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBLykftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBLykvtMEeeyDfxL4E7yBg" name="subsystemName" value="Access"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBLyk_tMEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBLylPtMEeeyDfxL4E7yBg" name="Type" value="Access"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hBMZoPtMEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBMZoftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBMZovtMEeeyDfxL4E7yBg" name="subsystemName" value="Adcs"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBMZo_tMEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBMZpPtMEeeyDfxL4E7yBg" name="Type" value="Adcs"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBMZpftMEeeyDfxL4E7yBg" name="slewRate" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBMZpvtMEeeyDfxL4E7yBg" name="slewRate" value="5"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBMZp_tMEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBMZqPtMEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBMZqftMEeeyDfxL4E7yBg" name="value" value="[0.0; 0.0; 0.0]"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBMZqvtMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBMZq_tMEeeyDfxL4E7yBg" name="key" value="ECI_Pointing_Vector(XYZ)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBMZrPtMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBMZrftMEeeyDfxL4E7yBg" name="type" value="Matrix"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBMZrvtMEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBMZr_tMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBMZsPtMEeeyDfxL4E7yBg" name="subsystemName" value="Access"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hBNnwPtMEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNnwftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNnwvtMEeeyDfxL4E7yBg" name="subsystemName" value="EOSensor"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNnw_tMEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNnxPtMEeeyDfxL4E7yBg" name="Type" value="EOSensor"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNnxftMEeeyDfxL4E7yBg" name="highQualityCaptureTime" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNnxvtMEeeyDfxL4E7yBg" name="highQualityCaptureTime" value="7"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNnx_tMEeeyDfxL4E7yBg" name="midQualityCaptureTime" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNnyPtMEeeyDfxL4E7yBg" name="midQualityCaptureTime" value="5"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNnyftMEeeyDfxL4E7yBg" name="lowQualityCaptureTime" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNnyvtMEeeyDfxL4E7yBg" name="lowQualityCaptureTime" value="3"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNny_tMEeeyDfxL4E7yBg" name="highQualityNumPixels" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNnzPtMEeeyDfxL4E7yBg" name="highQualityNumPixels" value="15000"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNnzftMEeeyDfxL4E7yBg" name="midQualityNumPixels" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNnzvtMEeeyDfxL4E7yBg" name="midQualityNumPixels" value="10000"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNnz_tMEeeyDfxL4E7yBg" name="lowQualityNumPixels" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn0PtMEeeyDfxL4E7yBg" name="lowQualityNumPixels" value="5000"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBNn0ftMEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn0vtMEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn0_tMEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn1PtMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn1ftMEeeyDfxL4E7yBg" name="key" value="numPixels"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn1vtMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn1_tMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBNn2PtMEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn2ftMEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn2vtMEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn2_tMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn3PtMEeeyDfxL4E7yBg" name="key" value="IncidenceAngle"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn3ftMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn3vtMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBNn3_tMEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn4PtMEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn4ftMEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn4vtMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn4_tMEeeyDfxL4E7yBg" name="key" value="EOSensorOn"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn5PtMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn5ftMEeeyDfxL4E7yBg" name="type" value="Bool"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBNn5vtMEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBNn5_tMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBNn6PtMEeeyDfxL4E7yBg" name="subsystemName" value="Adcs"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hBO14PtMEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBO14ftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBO14vtMEeeyDfxL4E7yBg" name="subsystemName" value="SSDR"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBO14_tMEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBO15PtMEeeyDfxL4E7yBg" name="Type" value="Ssdr"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBO15ftMEeeyDfxL4E7yBg" name="bufferSize" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBO15vtMEeeyDfxL4E7yBg" name="bufferSize" value="5000"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBO15_tMEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBO16PtMEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBO16ftMEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBO16vtMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBO16_tMEeeyDfxL4E7yBg" name="key" value="DataBufferFillRatio"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBO17PtMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBO17ftMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBO17vtMEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBO17_tMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBO18PtMEeeyDfxL4E7yBg" name="subsystemName" value="EOSensor"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBO18ftMEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBO18vtMEeeyDfxL4E7yBg" name="fcnName" value="SSDRfromEOSensor.asset2"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hBQEAPtMEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBQEAftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBQEAvtMEeeyDfxL4E7yBg" name="subsystemName" value="Comm"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBQEA_tMEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBQEBPtMEeeyDfxL4E7yBg" name="Type" value="Comm"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBQEBftMEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBQEBvtMEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBQEB_tMEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBQECPtMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBQECftMEeeyDfxL4E7yBg" name="key" value="DataRate(MB/s)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBQECvtMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBQEC_tMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBQEDPtMEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBQEDftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBQEDvtMEeeyDfxL4E7yBg" name="subsystemName" value="SSDR"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBQED_tMEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBQEEPtMEeeyDfxL4E7yBg" name="fcnName" value="CommfromSSDR.asset2"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hBRSIPtMEeeyDfxL4E7yBg" name="SUBSYSTEM">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSIftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSIvtMEeeyDfxL4E7yBg" name="subsystemName" value="Power"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSI_tMEeeyDfxL4E7yBg" name="Type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSJPtMEeeyDfxL4E7yBg" name="Type" value="Power"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSJftMEeeyDfxL4E7yBg" name="penumbraSolarPower" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSJvtMEeeyDfxL4E7yBg" name="penumbraSolarPower" value="75"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSJ_tMEeeyDfxL4E7yBg" name="fullSolarPower" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSKPtMEeeyDfxL4E7yBg" name="fullSolarPower" value="150"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSKftMEeeyDfxL4E7yBg" name="batterySize" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSKvtMEeeyDfxL4E7yBg" name="batterySize" value="1000000"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBRSK_tMEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSLPtMEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSLftMEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSLvtMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSL_tMEeeyDfxL4E7yBg" name="key" value="DepthofDischarge"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSMPtMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSMftMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBRSMvtMEeeyDfxL4E7yBg" name="IC">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSM_tMEeeyDfxL4E7yBg" name="value" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSNPtMEeeyDfxL4E7yBg" name="value" value="0.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSNftMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSNvtMEeeyDfxL4E7yBg" name="key" value="SolarPanelPowerIn"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSN_tMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSOPtMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBRSOftMEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSOvtMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSO_tMEeeyDfxL4E7yBg" name="subsystemName" value="Comm"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSPPtMEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSPftMEeeyDfxL4E7yBg" name="fcnName" value="PowerfromComm.asset2"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBRSPvtMEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSP_tMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSQPtMEeeyDfxL4E7yBg" name="subsystemName" value="Adcs"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSQftMEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSQvtMEeeyDfxL4E7yBg" name="fcnName" value="PowerfromADCS.asset2"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBRSQ_tMEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSRPtMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSRftMEeeyDfxL4E7yBg" name="subsystemName" value="EOSensor"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSRvtMEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSR_tMEeeyDfxL4E7yBg" name="fcnName" value="PowerfromEOSensor.asset2"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBRSSPtMEeeyDfxL4E7yBg" name="DEPENDENCY">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSSftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSSvtMEeeyDfxL4E7yBg" name="subsystemName" value="SSDR"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBRSS_tMEeeyDfxL4E7yBg" name="fcnName" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBRSTPtMEeeyDfxL4E7yBg" name="fcnName" value="PowerfromSSDR.asset2"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hBTHUPtMEeeyDfxL4E7yBg" name="CONSTRAINT">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBTHUftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBTHUvtMEeeyDfxL4E7yBg" name="subsystemName" value="Power"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBTHU_tMEeeyDfxL4E7yBg" name="value" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBTHVPtMEeeyDfxL4E7yBg" name="value" value="0.25"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBTHVftMEeeyDfxL4E7yBg" name="type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBTHVvtMEeeyDfxL4E7yBg" name="type" value="FAIL_IF_HIGHER"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBTHV_tMEeeyDfxL4E7yBg" name="name" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBTHWPtMEeeyDfxL4E7yBg" name="name" value="con1"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBTHWftMEeeyDfxL4E7yBg" name="STATEVAR">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBTHWvtMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBTHW_tMEeeyDfxL4E7yBg" name="key" value="DepthofDischarge"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBTHXPtMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBTHXftMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hBUVcPtMEeeyDfxL4E7yBg" name="CONSTRAINT">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBUVcftMEeeyDfxL4E7yBg" name="subsystemName" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBUVcvtMEeeyDfxL4E7yBg" name="subsystemName" value="SSDR"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBUVc_tMEeeyDfxL4E7yBg" name="value" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBUVdPtMEeeyDfxL4E7yBg" name="value" value="0.7"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBUVdftMEeeyDfxL4E7yBg" name="type" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBUVdvtMEeeyDfxL4E7yBg" name="type" value="FAIL_IF_HIGHER"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hBUVd_tMEeeyDfxL4E7yBg" name="name" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBUVePtMEeeyDfxL4E7yBg" name="name" value="con2"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hBUVeftMEeeyDfxL4E7yBg" name="STATEVAR">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBUVevtMEeeyDfxL4E7yBg" name="key" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBUVe_tMEeeyDfxL4E7yBg" name="key" value="DataBufferFillRatio"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hBUVfPtMEeeyDfxL4E7yBg" name="type" visibility="public">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBUVfftMEeeyDfxL4E7yBg" name="type" value="Double"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_uj35UPs9EeeyDfxL4E7yBg" name="REQUIREMENT">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yi56sPs9EeeyDfxL4E7yBg" name="value" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_8TIeoPs9EeeyDfxL4E7yBg" name="value" value="20.0"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_z5esEPs9EeeyDfxL4E7yBg" name="type" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Co_NcPs-EeeyDfxL4E7yBg" name="type" value="LESS_THAN"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_00Vx0Ps9EeeyDfxL4E7yBg" name="name" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_H1CbkPs-EeeyDfxL4E7yBg" name="name" value="imgcapqty"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_PqLTAP_4EeeV8KD6pqWJKQ" client="_dXkb0PsxEeeyDfxL4E7yBg" supplier="_y8hWkPsnEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_SSfZEP_4EeeV8KD6pqWJKQ" client="_VhyLUPsxEeeyDfxL4E7yBg" supplier="_y8hWkPsnEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_gCgMUP_4EeeV8KD6pqWJKQ" client="_uj35UPs9EeeyDfxL4E7yBg" supplier="_y8hWkPsnEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_heZikP_4EeeV8KD6pqWJKQ" client="_MmqqcPsxEeeyDfxL4E7yBg" supplier="_y8hWkPsnEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_U9iQwP_9EeeV8KD6pqWJKQ" client="_jdSpoPtBEeeyDfxL4E7yBg" supplier="_VhyLUPsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_WG4ecP_9EeeV8KD6pqWJKQ" client="_wIxdwPtBEeeyDfxL4E7yBg" supplier="_VhyLUPsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_XLf9IP_9EeeV8KD6pqWJKQ" client="_t00BoPtCEeeyDfxL4E7yBg" supplier="_VhyLUPsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_dCYQ8P_9EeeV8KD6pqWJKQ" client="_vXtXwPtCEeeyDfxL4E7yBg" supplier="_VhyLUPsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ifCt8P_9EeeV8KD6pqWJKQ" client="_ve16gPtCEeeyDfxL4E7yBg" supplier="_VhyLUPsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_mjCH0P_9EeeV8KD6pqWJKQ" client="_vlriUPtCEeeyDfxL4E7yBg" supplier="_VhyLUPsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_DzhmYP_-EeeV8KD6pqWJKQ" client="_uXkJYPtCEeeyDfxL4E7yBg" supplier="_VhyLUPsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_u8FA8P_-EeeV8KD6pqWJKQ" client="_5yU1IPtFEeeyDfxL4E7yBg" supplier="_VhyLUPsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_4dYYEP_-EeeV8KD6pqWJKQ" client="_bp2wQPtGEeeyDfxL4E7yBg" supplier="_VhyLUPsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_L2ycwP__EeeV8KD6pqWJKQ" client="_M-Oz4PtHEeeyDfxL4E7yBg" supplier="_jdSpoPtBEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_NFazEP__EeeV8KD6pqWJKQ" client="_deKKAPtHEeeyDfxL4E7yBg" supplier="_t00BoPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_PZnqUP__EeeV8KD6pqWJKQ" client="_fTn20PtHEeeyDfxL4E7yBg" supplier="_t00BoPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Y_KoQP__EeeV8KD6pqWJKQ" client="_hV9FgPtIEeeyDfxL4E7yBg" supplier="_uXkJYPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_gk1ZIP__EeeV8KD6pqWJKQ" client="_hesKwPtIEeeyDfxL4E7yBg" supplier="_uXkJYPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_3dJ0sP__EeeV8KD6pqWJKQ" client="_QMOkcPtIEeeyDfxL4E7yBg" supplier="_uXkJYPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Gv4X4AAAEeiV8KD6pqWJKQ" client="_tLRtsPtIEeeyDfxL4E7yBg" supplier="_uXkJYPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_RJq2MAAAEeiV8KD6pqWJKQ" client="_zmvVQPtIEeeyDfxL4E7yBg" supplier="_vXtXwPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_TIc3EAAAEeiV8KD6pqWJKQ" client="_zmv8UPtIEeeyDfxL4E7yBg" supplier="_vXtXwPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_knuxYAAAEeiV8KD6pqWJKQ" client="_N1EqYPtJEeeyDfxL4E7yBg" supplier="_ve16gPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_l_hqwAAAEeiV8KD6pqWJKQ" client="_N1F4gPtJEeeyDfxL4E7yBg" supplier="_ve16gPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_rJIB0AAAEeiV8KD6pqWJKQ" client="_hbt50PtJEeeyDfxL4E7yBg" supplier="_vlriUPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_shVx8AAAEeiV8KD6pqWJKQ" client="_hjiZEPtJEeeyDfxL4E7yBg" supplier="_vlriUPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_tSfiEAAAEeiV8KD6pqWJKQ" client="_2XhlYPtJEeeyDfxL4E7yBg" supplier="_vlriUPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_uIumgAAAEeiV8KD6pqWJKQ" client="_2dN9sPtJEeeyDfxL4E7yBg" supplier="_vlriUPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_u87DkAAAEeiV8KD6pqWJKQ" client="_2iTSAPtJEeeyDfxL4E7yBg" supplier="_vlriUPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_vwnKUAAAEeiV8KD6pqWJKQ" client="_2o63YPtJEeeyDfxL4E7yBg" supplier="_vlriUPtCEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_whTAYAAAEeiV8KD6pqWJKQ" client="_xjIXYPtLEeeyDfxL4E7yBg" supplier="_5yU1IPtFEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_yCPOsAAAEeiV8KD6pqWJKQ" client="_SDRBwPtMEeeyDfxL4E7yBg" supplier="_bp2wQPtGEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ek_PAAAEEeiV8KD6pqWJKQ" client="_hBKkdftMEeeyDfxL4E7yBg" supplier="_hBKkcPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_f5pU0AAEEeiV8KD6pqWJKQ" client="_hBKkcPtMEeeyDfxL4E7yBg" supplier="_dXkb0PsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_h0HdcAAEEeiV8KD6pqWJKQ" client="_hBLykPtMEeeyDfxL4E7yBg" supplier="_dXkb0PsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_jWa9sAAEEeiV8KD6pqWJKQ" client="_hBMZoPtMEeeyDfxL4E7yBg" supplier="_dXkb0PsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_oKZqEAAEEeiV8KD6pqWJKQ" client="_hBNnwPtMEeeyDfxL4E7yBg" supplier="_dXkb0PsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_qczxkAAEEeiV8KD6pqWJKQ" client="_hBO14PtMEeeyDfxL4E7yBg" supplier="_dXkb0PsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_spY94AAEEeiV8KD6pqWJKQ" client="_hBQEAPtMEeeyDfxL4E7yBg" supplier="_dXkb0PsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ueGcwAAEEeiV8KD6pqWJKQ" client="_hBRSIPtMEeeyDfxL4E7yBg" supplier="_dXkb0PsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_vx4_4AAEEeiV8KD6pqWJKQ" client="_hBMZp_tMEeeyDfxL4E7yBg" supplier="_hBMZoPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_zLMeAAAEEeiV8KD6pqWJKQ" client="_hBMZrvtMEeeyDfxL4E7yBg" supplier="_hBMZoPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_zwu0AAAEEeiV8KD6pqWJKQ" client="_hBNn0ftMEeeyDfxL4E7yBg" supplier="_hBNnwPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_0pb9oAAEEeiV8KD6pqWJKQ" client="_hBNn2PtMEeeyDfxL4E7yBg" supplier="_hBNnwPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_1RhRUAAEEeiV8KD6pqWJKQ" client="_hBNn3_tMEeeyDfxL4E7yBg" supplier="_hBNnwPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_2Fx_0AAEEeiV8KD6pqWJKQ" client="_hBNn5vtMEeeyDfxL4E7yBg" supplier="_hBNnwPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_345jQAAEEeiV8KD6pqWJKQ" client="_hBO15_tMEeeyDfxL4E7yBg" supplier="_hBO14PtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_4hXRcAAEEeiV8KD6pqWJKQ" client="_hBO17vtMEeeyDfxL4E7yBg" supplier="_hBO14PtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_5J0YkAAEEeiV8KD6pqWJKQ" client="_hBQEBftMEeeyDfxL4E7yBg" supplier="_hBQEAPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_5xakEAAEEeiV8KD6pqWJKQ" client="_hBQEDPtMEeeyDfxL4E7yBg" supplier="_hBQEAPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_8hmzwAAEEeiV8KD6pqWJKQ" client="_hBRSK_tMEeeyDfxL4E7yBg" supplier="_hBRSIPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_9qiKsAAEEeiV8KD6pqWJKQ" client="_hBRSMvtMEeeyDfxL4E7yBg" supplier="_hBRSIPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_-eglUAAEEeiV8KD6pqWJKQ" client="_hBRSOftMEeeyDfxL4E7yBg" supplier="_hBRSIPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_BzlqwAAFEeiV8KD6pqWJKQ" client="_hBRSPvtMEeeyDfxL4E7yBg" supplier="_hBRSIPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_CpSjsAAFEeiV8KD6pqWJKQ" client="_hBRSQ_tMEeeyDfxL4E7yBg" supplier="_hBRSIPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ER3rEAAFEeiV8KD6pqWJKQ" client="_hBRSSPtMEeeyDfxL4E7yBg" supplier="_hBRSIPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_G8xyIAAFEeiV8KD6pqWJKQ" client="_hBTHWftMEeeyDfxL4E7yBg" supplier="_hBTHUPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_J_f8QAAFEeiV8KD6pqWJKQ" client="_hBUVeftMEeeyDfxL4E7yBg" supplier="_hBUVcPtMEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_NaZ84AAFEeiV8KD6pqWJKQ" client="_hBTHUPtMEeeyDfxL4E7yBg" supplier="_dXkb0PsxEeeyDfxL4E7yBg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_PREjkAAFEeiV8KD6pqWJKQ" client="_hBUVcPtMEeeyDfxL4E7yBg" supplier="_dXkb0PsxEeeyDfxL4E7yBg"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xcPJMPsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcXsEPsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xcgO8PsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcg2APsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xcoKwPsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcox0PsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xcpY4PsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcp_8PsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xcqnAPsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcrOEPsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xcr1IPsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcr1IfsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xcscMPsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xctDQPsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xctqUPsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcuRYPsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xcu4cPsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcvfgPsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xcxUsPsfEeeyDfxL4E7yBg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcx7wPsfEeeyDfxL4E7yBg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_y80RgPsnEeeyDfxL4E7yBg" base_Class="_y8hWkPsnEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_Mm9lYPsxEeeyDfxL4E7yBg" base_Class="_MmqqcPsxEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_ViFGQPsxEeeyDfxL4E7yBg" base_Class="_VhyLUPsxEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_dX3WwPsxEeeyDfxL4E7yBg" base_Class="_dXkb0PsxEeeyDfxL4E7yBg"/>
+  <Requirements:Requirement xmi:id="_ukQT0Ps9EeeyDfxL4E7yBg" base_Class="_uj35UPs9EeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_jdjvYPtBEeeyDfxL4E7yBg" base_Class="_jdSpoPtBEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_wJCjgPtBEeeyDfxL4E7yBg" base_Class="_wIxdwPtBEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_t0-ZsPtCEeeyDfxL4E7yBg" base_Class="_t00BoPtCEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_uXt6YPtCEeeyDfxL4E7yBg" base_Class="_uXkJYPtCEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_vX3v0PtCEeeyDfxL4E7yBg" base_Class="_vXtXwPtCEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_ve_rgPtCEeeyDfxL4E7yBg" base_Class="_ve16gPtCEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_vl16YPtCEeeyDfxL4E7yBg" base_Class="_vlriUPtCEeeyDfxL4E7yBg"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_5yqzYPtFEeeyDfxL4E7yBg" base_Class="_5yU1IPtFEeeyDfxL4E7yBg"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_bqBvYPtGEeeyDfxL4E7yBg" base_Class="_bp2wQPtGEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_M-fSkPtHEeeyDfxL4E7yBg" base_Class="_M-Oz4PtHEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_deb20PtHEeeyDfxL4E7yBg" base_Class="_deKKAPtHEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_fT5joPtHEeeyDfxL4E7yBg" base_Class="_fTn20PtHEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_QMbYwPtIEeeyDfxL4E7yBg" base_Class="_QMOkcPtIEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hWHdkPtIEeeyDfxL4E7yBg" base_Class="_hV9FgPtIEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_he2i0PtIEeeyDfxL4E7yBg" base_Class="_hesKwPtIEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_tLcFwPtIEeeyDfxL4E7yBg" base_Class="_tLRtsPtIEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_zm8JkPtIEeeyDfxL4E7yBg" base_Class="_zmvVQPtIEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_znb40PtIEeeyDfxL4E7yBg" base_Class="_zmv8UPtIEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_N1ResPtJEeeyDfxL4E7yBg" base_Class="_N1EqYPtJEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_N1-CQPtJEeeyDfxL4E7yBg" base_Class="_N1F4gPtJEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hb448PtJEeeyDfxL4E7yBg" base_Class="_hbt50PtJEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hjumUPtJEeeyDfxL4E7yBg" base_Class="_hjiZEPtJEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_2XskgPtJEeeyDfxL4E7yBg" base_Class="_2XhlYPtJEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_2dY80PtJEeeyDfxL4E7yBg" base_Class="_2dN9sPtJEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_2idqEPtJEeeyDfxL4E7yBg" base_Class="_2iTSAPtJEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_2pF2gPtJEeeyDfxL4E7yBg" base_Class="_2o63YPtJEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_xjdHgPtLEeeyDfxL4E7yBg" base_Class="_xjIXYPtLEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_SDd2EPtMEeeyDfxL4E7yBg" base_Class="_SDRBwPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hBfUkPtMEeeyDfxL4E7yBg" base_Class="_hBKkcPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hB8nkPtMEeeyDfxL4E7yBg" base_Class="_hBKkdftMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hCZ6kPtMEeeyDfxL4E7yBg" base_Class="_hBLykPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hC3NkPtMEeeyDfxL4E7yBg" base_Class="_hBMZoPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hDUgkPtMEeeyDfxL4E7yBg" base_Class="_hBMZp_tMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hDzowPtMEeeyDfxL4E7yBg" base_Class="_hBMZrvtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hERi0PtMEeeyDfxL4E7yBg" base_Class="_hBNnwPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hE_UgPtMEeeyDfxL4E7yBg" base_Class="_hBNn0ftMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hFgR4PtMEeeyDfxL4E7yBg" base_Class="_hBNn2PtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hGBPQPtMEeeyDfxL4E7yBg" base_Class="_hBNn3_tMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hGiMoPtMEeeyDfxL4E7yBg" base_Class="_hBNn5vtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hHDxEPtMEeeyDfxL4E7yBg" base_Class="_hBO14PtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hHo_4PtMEeeyDfxL4E7yBg" base_Class="_hBO15_tMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hILLYPtMEeeyDfxL4E7yBg" base_Class="_hBO17vtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hIyPYPtMEeeyDfxL4E7yBg" base_Class="_hBQEAPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hJbIkPtMEeeyDfxL4E7yBg" base_Class="_hBQEBftMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hKLWgPtMEeeyDfxL4E7yBg" base_Class="_hBQEDPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hK1d0PtMEeeyDfxL4E7yBg" base_Class="_hBRSIPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hLlEsPtMEeeyDfxL4E7yBg" base_Class="_hBRSK_tMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hMQaIPtMEeeyDfxL4E7yBg" base_Class="_hBRSMvtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hM4sQPtMEeeyDfxL4E7yBg" base_Class="_hBRSOftMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hOeAoPtMEeeyDfxL4E7yBg" base_Class="_hBRSPvtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hO6skPtMEeeyDfxL4E7yBg" base_Class="_hBRSQ_tMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hPYmoPtMEeeyDfxL4E7yBg" base_Class="_hBRSSPtMEeeyDfxL4E7yBg"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_hP2gsPtMEeeyDfxL4E7yBg" base_Class="_hBTHUPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hQey0PtMEeeyDfxL4E7yBg" base_Class="_hBTHWftMEeeyDfxL4E7yBg"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_hQ8s4PtMEeeyDfxL4E7yBg" base_Class="_hBUVcPtMEeeyDfxL4E7yBg"/>
+  <Blocks:Block xmi:id="_hRkX8PtMEeeyDfxL4E7yBg" base_Class="_hBUVeftMEeeyDfxL4E7yBg"/>
+</xmi:XMI>

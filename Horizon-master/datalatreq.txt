@@ -1,0 +1,8 @@
+ASSET 1
+Average Data Latency of 800.449058 seconds with 50 images downlinked
+FAILURE: SYSTEM-LEVEL REQUIREMENTS HAVE NOT BEEN MET:
+800.449058 is not < 100.000000
+ASSET 2
+Average Data Latency of 731.137012 seconds with 48 images downlinked
+FAILURE: SYSTEM-LEVEL REQUIREMENTS HAVE NOT BEEN MET:
+731.137012 is not < 100.000000

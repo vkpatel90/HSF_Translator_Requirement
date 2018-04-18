@@ -1,0 +1,21 @@
+﻿'Horizon.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Horizon.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Users\Viren\Documents\NEW_WORKSPACE\Horizon-master\Horizon-master\Horizon\bin\Debug\Horizon.exe'. Symbols loaded.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Users\Viren\Documents\NEW_WORKSPACE\Horizon-master\Horizon-master\Horizon\bin\Debug\log4net.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Users\Viren\Documents\NEW_WORKSPACE\Horizon-master\Horizon-master\Horizon\bin\Debug\HSFScheduler.dll'. Symbols loaded.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Users\Viren\Documents\NEW_WORKSPACE\Horizon-master\Horizon-master\Horizon\bin\Debug\MissionElements.dll'. Symbols loaded.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Users\Viren\Documents\NEW_WORKSPACE\Horizon-master\Horizon-master\Horizon\bin\Debug\HSFSystem.dll'. Symbols loaded.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Users\Viren\Documents\NEW_WORKSPACE\Horizon-master\Horizon-master\Horizon\bin\Debug\HSFUniverse.dll'. Symbols loaded.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Users\Viren\Documents\NEW_WORKSPACE\Horizon-master\Horizon-master\Horizon\bin\Debug\Utilities.dll'. Symbols loaded.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Users\Viren\Documents\NEW_WORKSPACE\Horizon-master\Horizon-master\Horizon\bin\Debug\UserModel.dll'. Symbols loaded.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'Anonymously Hosted DynamicMethods Assembly'. 
+'Horizon.exe' (CLR v4.0.30319: Horizon.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Dynamic\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Dynamic.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Exception thrown: 'System.ArgumentException' in System.dll
+Exception thrown: 'System.ArgumentException' in System.dll
+Exception thrown: 'System.ArgumentException' in System.dll
+Exception thrown: 'System.ArgumentException' in System.dll
+The program '[8484] Horizon.exe' has exited with code 0 (0x0).
